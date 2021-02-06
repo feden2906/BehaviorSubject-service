@@ -8,7 +8,7 @@ import {SubjectService} from '../../services';
 })
 export class AComponent implements OnInit {
 
-  value = 0;
+  value: number;
 
   constructor(private subjectService: SubjectService) { }
 

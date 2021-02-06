@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {SubjectService} from './services';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,9 +9,9 @@ import {SubjectService} from './services';
 export class AppComponent implements OnInit {
   title = 'subject-service';
 
-  value = 0;
+  value: number;
 
-  constructor(private subjectService: SubjectService) {}
+  constructor(private subjectService: SubjectService) { }
 
   ngOnInit(): void {
     this.subjectService.getCurrentState().subscribe(value => this.value = value);

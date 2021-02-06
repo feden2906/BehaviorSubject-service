@@ -8,10 +8,9 @@ import {SubjectService} from '../../services';
 })
 export class BComponent implements OnInit {
 
-  value = 0;
+  value: number;
 
-  constructor(private subjectService: SubjectService) {
-  }
+  constructor(private subjectService: SubjectService) { }
 
   ngOnInit(): void {
     this.subjectService.getCurrentState().subscribe(value => this.value = value);
