@@ -45,6 +45,15 @@ export class AppComponent implements OnInit {
   // }
 
 
+  //    # 3
+  // ngOnInit(): void { }                            // Відпрацьовує коли компонента готова
+                                                     // аналог ComponentDidMount
 
+
+  //    # 4
+    ngDoCheck(): void {
+  // ngAfterContentInit - після того як контент проініціалізувався
+  // ngAfterContentChecked  - перевірка контенту на помилки
+}
 
 // }
