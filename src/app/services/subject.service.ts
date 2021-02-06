@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import {Injectable, SimpleChange} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
 
 @Injectable({
@@ -7,8 +7,6 @@ import {BehaviorSubject} from 'rxjs';
 export class SubjectService {
 
   private data = new BehaviorSubject<number>(0);
-
-  constructor() { }
 
   getCurrentState(): BehaviorSubject<number> {
     return this.data;

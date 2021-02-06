@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, SimpleChange} from '@angular/core';
 import {SubjectService} from './services';
 
 @Component({
@@ -11,7 +11,8 @@ export class AppComponent implements OnInit {
 
   value: number;
 
-  constructor(private subjectService: SubjectService) { }
+  constructor(private subjectService: SubjectService) {
+  }
 
   ngOnInit(): void {
     this.subjectService.getCurrentState().subscribe(value => this.value = value);
@@ -21,3 +22,29 @@ export class AppComponent implements OnInit {
     this.subjectService.setNewState();
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+  // export class AppComponent implements OnInit, OnChanges {
+
+  //    # 1
+  // constructor() { }
+
+
+  //    # 2
+  // ngOnChanges(changes: SimpleChange): void {      // SimpleChange має доступ до змін
+  //   console.log(changes);
+  // }
+
+
+
+
+// }
