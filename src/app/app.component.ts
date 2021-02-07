@@ -51,15 +51,15 @@ export class AppComponent implements OnInit {
 
 
   //    # 4
-  //   ngDoCheck(): void {
-  // ngAfterContentInit - після того як контент проініціалізувався
-  // ngAfterContentChecked  - перевірка контенту на помилки
-  // ngAfterViewInit   - після перебудування вьюшки
-  // ngAfterContentChecked  - перевірка перебудованого
-// }
+  // ngDoCheck(): void {                                              // НАВАНТАЖУЄ КОРИСТУВАЧА
+  //    ngAfterContentInit       - після того як контент проініціалізувався
+  //    ngAfterContentChecked    - перевірка контенту на помилки
+  //    ngAfterViewInit          - після перебудування вьюшки
+  //    ngAfterContentChecked    - перевірка перебудованого
+  // }
 
-//    # 5
-// ngOnInit(): void { }                            // Відпрацьовує коли компонента готова
-// аналог ComponentDidMount
 
+  //    # 5
+  // ngOnDestroy(): void { }                         // Відпрацьовує коли компонента знищується
+                                                     // аналог ComponentDidUnMount
 // }
