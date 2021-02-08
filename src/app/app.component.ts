@@ -1,5 +1,6 @@
-import {Component, OnInit, SimpleChange} from '@angular/core';
+import {Component, OnInit, SimpleChange, ViewChild} from '@angular/core';
 import {SubjectService} from './services';
+import {AComponent, BComponent} from './components';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +27,12 @@ export class AppComponent implements OnInit {
 
 
 
-  // export class AppComponent implements OnInit, OnChanges {
+  // export class AppComponent implements OnInit, OnChanges, afterViewInit {
+
+  //    @ViewChild(AComponent)                       // Надає доступ до дітей
+  //    a: AComponent;                               // Тип даних
+  //    @ViewChild(BComponent)
+  //    b: BComponent;
 
   //    # 1
   // constructor() { }
