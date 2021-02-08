@@ -29,10 +29,15 @@ export class AppComponent implements OnInit {
 
   // export class AppComponent implements OnInit, OnChanges, afterViewInit {
 
-  //    @ViewChild(AComponent)                       // Надає доступ до дітей
+  //    @ViewChild(AComponent)                       // Витягує дітей
   //    a: AComponent;                               // Тип даних
   //    @ViewChild(BComponent)
   //    b: BComponent;
+
+  //    afterViewInit(): void { }                     // Дає змогу доступитися до дітей
+                                                      // Відпрацьовує коли готова вьюшка
+
+
 
   //    # 1
   // constructor() { }
